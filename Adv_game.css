@@ -1,0 +1,74 @@
+.gameContainer {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+.gameContainer {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(1.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.me {
+  height: 60px;
+  width: 80px;
+  background-image: url(2a9f.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+}
+.obstacle {
+  height: 100px;
+  width: 180px;
+  background-image: url(obs.gif);
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  left: 70vw;
+}
+.animateme {
+  animation: me 1s linear;
+}
+@keyframes me {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 200px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.obstacleAni {
+  animation: obstacleAni 5s linear infinite;
+}
+@keyframes obstacleAni {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -10vw;
+  }
+}
+
+.gameOver {
+  visibility: hidden;
+}
+#scoreCount {
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 5vw;
+}
+.gameOver {
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 5vw;
+}
